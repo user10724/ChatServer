@@ -10,3 +10,15 @@
 1438	1646	1666614070501394332	../bin/ChatServer	5e40dcb6e428c108
 2	1906	1666614069061394323	src/client/CMakeFiles/ChatClient.dir/main.cpp.o	735a39bbfcc7d431
 1906	2030	1666614070971394335	../bin/ChatClient	7986c195e55223de
+1	3	1666626508381469671	clean	a7c70eacb11a5051
+1	155	1666626508551469673	src/server/CMakeFiles/ChatServer.dir/model/offlinemessagemodel.cpp.o	16a55ad4e84b2003
+1	170	1666626508551469673	src/server/CMakeFiles/ChatServer.dir/model/friendmodel.cpp.o	6baa6e5ff336a8d8
+1	174	1666626508551469673	src/server/CMakeFiles/ChatServer.dir/db/db.cpp.o	276f1d6d5248ad11
+1	178	1666626508551469673	src/server/CMakeFiles/ChatServer.dir/model/usermodel.cpp.o	1696cd60af93d5cb
+1	259	1666626508551469673	src/server/CMakeFiles/ChatServer.dir/model/groupmodel.cpp.o	b864ea877d3c749a
+1	858	1666626508551469673	src/server/CMakeFiles/ChatServer.dir/main.cpp.o	c40d98b4d5548f07
+1	1449	1666626508551469673	src/server/CMakeFiles/ChatServer.dir/chatservice.cpp.o	6504a2c587e90aab
+0	1509	1666626508551469673	src/server/CMakeFiles/ChatServer.dir/chatserver.cpp.o	5173d4a8cf04634e
+1509	1711	1666626510061469682	../bin/ChatServer	5e40dcb6e428c108
+2	2049	1666626508551469673	src/client/CMakeFiles/ChatClient.dir/main.cpp.o	735a39bbfcc7d431
+2049	2172	1666626510601469685	../bin/ChatClient	7986c195e55223de
