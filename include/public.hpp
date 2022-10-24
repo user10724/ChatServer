@@ -14,6 +14,9 @@ enum EnMsgType
     CREATE_GROUP_MSG, //SET UP GROUP
     ADD_GROUP_MSG,    //ADD GROUP
     GROUP_CHAT_MSG,   // GROUP CHAT
+
+
+    LOGINOUT_MSG,
 };
 
 

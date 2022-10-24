@@ -14,8 +14,8 @@ using namespace std;
 using namespace muduo;
 using namespace muduo::net;
 
-#include "../../include/server/db/usermodel.hpp"
-#include "../json.hpp"
+#include "usermodel.hpp"
+#include "json.hpp"
 using json =nlohmann::json;
 
 using MsgHandler = std::function<void(const TcpConnectionPtr &conn,json & js,Timestamp)>;
@@ -30,12 +30,25 @@ public:
     void oneChat(const TcpConnectionPtr &conn,json & js,Timestamp time); 
     //添加好友业务
     void addFriend(const TcpConnectionPtr &conn,json & js,Timestamp time);
-    
-    MsgHandler getHandler(int msgid);
+    // 创建群组业务
+    void createGroup(const TcpConnectionPtr &conn, json &js, Timestamp time);
+    // 加入群组业务
+    void addGroup(const TcpConnectionPtr &conn, json &js, Timestamp time);
+    // 群组聊天业务
+    void groupChat(const TcpConnectionPtr &conn, json &js, Timestamp time);
+    // 处理注销业务
+    void loginout(const TcpConnectionPtr &conn, json &js, Timestamp time);
+    // 处理客户端异常退出
+    void clientCloseException(const TcpConnectionPtr &conn);
     //服务器异常 业务重置方法
     void reset();
+    // 获取消息对应的处理器
+    MsgHandler getHandler(int msgid);
+    // 从redis消息队列中获取订阅的消息
+    void handleRedisSubscribeMessage(int, string);
 
-    void clientCloseException(const TcpConnectionPtr &conn);
+
+
 private:
     ChatService();
 

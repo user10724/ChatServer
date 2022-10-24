@@ -1,8 +1,8 @@
-#include "../../include/server/chatserver.hpp"
+#include "chatserver.hpp"
 #include <functional>
-#include "../../include/json.hpp"
+#include "json.hpp"
 #include <string>
-#include "../../include/server/chatservice.hpp"
+#include "chatservice.hpp"
 
 
 using namespace std;
