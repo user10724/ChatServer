@@ -14,6 +14,7 @@ using namespace std;
 using namespace muduo;
 using namespace muduo::net;
 
+#include "redis.hpp"
 #include "usermodel.hpp"
 #include "json.hpp"
 using json =nlohmann::json;
@@ -63,6 +64,7 @@ private:
 
     FriendModel _friendModel;
     GroupModel _groupModel;
+    Redis       _redis;
 };
 
 #endif
